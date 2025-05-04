@@ -1,0 +1,28 @@
+[project]
+name = "yolo-world-ultralytics"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Ping Wu", email = "wpwupingwp@outlook.com" }
+]
+dependencies = [
+    "ultralytics>=8.3.126",
+    "clip @ git+https://github.com/ultralytics/CLIP.git@842ad30729a3147eb9fdb6013ca7addba14fba49",
+]
+readme = "README.md"
+requires-python = ">= 3.11"
+license = { text = "AGPL-3.0" }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/yolo_world_ultralytics"]
