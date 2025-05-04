@@ -1,0 +1,12 @@
+path: ./Dataset2
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: flower
+  1: fruit
+  2: leaf
+  3: plant
+  4: root
+  5: stem
